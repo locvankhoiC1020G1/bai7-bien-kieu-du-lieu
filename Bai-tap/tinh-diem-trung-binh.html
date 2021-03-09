@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+<script>
+  /*  Viết chương trình nhập điểm của một sinh viên cho các môn:
+        Vật lý, Hóa học, và Sinh học.
+        Sau đó hiển thị điểm trung bình và tổng của những điểm này*/
+
+/*
+nhap diem 3 mon
+*/
+  let diemLy;
+  let diemHoa;
+  let diemSinh;
+
+  diemLy = prompt("nhap diem ly");
+  diemHoa = prompt("nhap diem Hoa");
+  diemSinh = prompt("nhap diem SInh");
+
+/*  let width = parseInt(inputWidth);
+  let height = parseInt(inputHeight);*/
+
+  let Ly = parseInt(diemLy);
+  let Hoa = parseInt(diemHoa);
+  let Sinh = parseInt(diemSinh);
+  let diemtong = Ly + Hoa + Sinh;
+  diemtb = diemtong/3;
+  document.write(diemtb);
+
+
+</script>
+</body>
+</html>
