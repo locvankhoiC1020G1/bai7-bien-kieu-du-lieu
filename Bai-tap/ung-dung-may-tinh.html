@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<input type="number" id="number1">
+<input type="number" id="number2">
+<input type="button" onclick="cong()" value="Cộng">
+<input type="button" onclick="tru()" value="Trừ">
+<input type="button" onclick="nhan()" value="Nhân">
+<input type="button" onclick="chia()" value="Chia">
+<p id="ketqua"></p>
+<body>
+<script>
+    function cong() {
+        let a = +document.getElementById('number1').value;
+        let b = +document.getElementById('number2').value;
+        result = a + b;
+        document.getElementById('ketqua').innerText = 'kết quả:' + result;
+    }
+
+    function tru() {
+        let a = +document.getElementById('number1').value;
+        let b = +document.getElementById('number2').value;
+        result = a - b;
+        document.getElementById('ketqua').innerText = 'kết quả:' + result;
+    }
+
+    function nhan() {
+        let a = +document.getElementById('number1').value;
+        let b = +document.getElementById('number2').value;
+        result = a * b;
+        document.getElementById('ketqua').innerText = 'kết quả:' + result;
+    }
+
+    function chia() {
+        let a = +document.getElementById('number1').value;
+        let b = +document.getElementById('number2').value;
+        let result = a / b;
+        document.getElementById('ketqua').innerText = 'kết quả:' + result;
+    }
+</script>
+</body>
+</html>
